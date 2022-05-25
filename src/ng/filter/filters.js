@@ -78,9 +78,8 @@ function currencyFilter($locale) {
   };
 
   function currencySymbolReReplace(input, currencySymbol) {
-    var s = input;
     if (!input.length) {
-      return s;
+      return input;
     }
     // avoid the REDoS by doing this manually, because JS doesn't have positive quantifiers
     // If the currency symbol is empty, trim whitespace around the symbol
